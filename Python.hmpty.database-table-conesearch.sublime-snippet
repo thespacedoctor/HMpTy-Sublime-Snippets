@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+from HMpTy.mysql import conesearch
+cs = conesearch(
+    log=log,
+    dbConn=dbConn,
+    tableName="${1:transientBucket}",
+    columns="${2:transientBucketId, spectralType}",
+    ra=${3:raList},
+    dec=${4:decList},
+    radiusArcsec=${5:10},
+    separations=True,
+    distinct=True,
+    sqlWhere="${6:spectralType is not null}"
+)
+matchIndies, matches = cs.search()
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xhmpty-database-table-conesearch</tabTrigger>
+    <!-- Required: Base Phrase to generate tab-triggers -->
+    <triggerBase>database-table-conesearch</triggerBase>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>snip</description>
+    <!-- Optional: Tags to help with tab completion -->
+    <tags></tags>
+</snippet>

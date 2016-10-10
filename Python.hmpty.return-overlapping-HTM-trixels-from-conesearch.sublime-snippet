@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+overlappingTrixelIds = mesh16.intersect(
+    ra=${1:"23:25:53.56"},
+    dec=${2:"+26:54:23.9"},
+    radius=${3:radiusDeg},
+    inclusive=True
+)
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xhmpty-return-overlapping-HTM-trixels-from-conesearch</tabTrigger>
+    <!-- Required: Base Phrase to generate tab-triggers -->
+    <triggerBase>return-overlapping-HTM-trixels-from-conesearch</triggerBase>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>snip</description>
+    <!-- Optional: Tags to help with tab completion -->
+    <tags></tags>
+</snippet>

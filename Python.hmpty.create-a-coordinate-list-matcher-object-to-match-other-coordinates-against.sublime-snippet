@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+from HMpTy import Matcher
+# USE THIS COORDINATE SET MATCHER TO MATCH OTHER COORDINATE SETS AGAINST
+coordinateSet = Matcher(
+    log=log,
+    ra=raList1,
+    dec=decList1,
+    depth=16
+)
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xhmpty-create-a-coordinate-list-matcher-object-to-match-other-coordinates-against</tabTrigger>
+    <!-- Required: Base Phrase to generate tab-triggers -->
+    <triggerBase>create-a-coordinate-list-matcher-object-to-match-other-coordinates-against</triggerBase>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>snip</description>
+    <!-- Optional: Tags to help with tab completion -->
+    <tags></tags>
+</snippet>

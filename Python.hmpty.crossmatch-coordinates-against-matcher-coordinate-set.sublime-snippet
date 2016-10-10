@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+matchIndices1, matchIndices2, seps = coordinateSet.match(
+    ra=${1:raList2},
+    dec=${2:decList2},
+    radius=${3:degrees},
+    maxmatch=0 # 1 = closest, 0 = all
+)
+for m1, m2, s in zip(matchIndices1, matchIndices2, seps):
+    print raList1[m1], decList1[m1], " -> ", s * 3600., " arcsec -> ", ${1:raList2}[m2], ${2:decList2}[m2]
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xhmpty-crossmatch-coordinates-against-matcher-coordinate-set</tabTrigger>
+    <!-- Required: Base Phrase to generate tab-triggers -->
+    <triggerBase>crossmatch-coordinates-against-matcher-coordinate-set</triggerBase>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>snip</description>
+    <!-- Optional: Tags to help with tab completion -->
+    <tags></tags>
+</snippet>

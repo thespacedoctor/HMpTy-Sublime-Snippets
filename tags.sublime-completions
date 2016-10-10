@@ -1,0 +1,20 @@
+{
+"scope": "source.python",
+"completions":
+[
+   
+	{ "trigger": "hmpty> depth of htm mesh\tcomp", "contents": "xhmpty-depth-of-htm-mesh" },
+	{ "trigger": "hmpty> get depth of coordinate set matcher\tcomp", "contents": "xhmpty-get-depth-of-coordinate-set-matcher" },
+	{ "trigger": "hmpty> crossmatch two lists of coordinates\tcomp", "contents": "xhmpty-crossmatch-two-lists-of-coordinates" },
+	{ "trigger": "hmpty> import HMpTy\tcomp", "contents": "xhmpty-import-HMpTy" },
+	{ "trigger": "hmpty> lookup coordinate trixel htm id\tcomp", "contents": "xhmpty-lookup-coordinate-trixel-htm-id" },
+	{ "trigger": "hmpty> database table conesearch\tcomp", "contents": "xhmpty-database-table-conesearch" },
+	{ "trigger": "hmpty> setup htm mesh\tcomp", "contents": "xhmpty-setup-htm-mesh" },
+	{ "trigger": "hmpty> return overlapping HTM trixels from conesearch\tcomp", "contents": "xhmpty-return-overlapping-HTM-trixels-from-conesearch" },
+	{ "trigger": "hmpty> crossmatch coordinates against matcher coordinate set\tcomp", "contents": "xhmpty-crossmatch-coordinates-against-matcher-coordinate-set" },
+	{ "trigger": "hmpty> add htmids to a database table\tcomp", "contents": "xhmpty-add-htmids-to-a-database-table" },
+	{ "trigger": "hmpty> area of mesh triangle\tcomp", "contents": "xhmpty-area-of-mesh-triangle" },
+	{ "trigger": "hmpty> initial htmid conesearch query\tcomp", "contents": "xhmpty-initial-htmid-conesearch-query" },
+	{ "trigger": "hmpty> create a coordinate list matcher object to match other coordinates against\tcomp", "contents": "xhmpty-create-a-coordinate-list-matcher-object-to-match-other-coordinates-against" } 
+]
+}

@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+matchIndices1, matchIndices2, seps = mesh.match(
+    ra1=raList1,
+    dec1=decList1,
+    ra2=raList2,
+    dec2=decList2,
+    radius=${1:radiusInDeg_listOrSingleValue},
+    maxmatch=0 # 1 = match closest 1, 0 = match all
+)
+
+for m1, m2, s in zip(matchIndices1, matchIndices2, seps):
+    print raList1[m1], decList1[m1], " -> ", s * 3600., " arcsec -> ", raList2[m2], decList2[m2]
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xhmpty-crossmatch-two-lists-of-coordinates</tabTrigger>
+    <!-- Required: Base Phrase to generate tab-triggers -->
+    <triggerBase>crossmatch-two-lists-of-coordinates</triggerBase>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>snip</description>
+    <!-- Optional: Tags to help with tab completion -->
+    <tags></tags>
+</snippet>

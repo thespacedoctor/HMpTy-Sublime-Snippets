@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+htmids = mesh.lookup_id(${1:raList1}, ${2:decList1})
+for h, r, d in zip(htmids, ${1:raList1}, ${2:decList1}):
+    print r, d, " --> ", h
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xhmpty-lookup-coordinate-trixel-htm-id</tabTrigger>
+    <!-- Required: Base Phrase to generate tab-triggers -->
+    <triggerBase>lookup-coordinate-trixel-htm-id</triggerBase>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>snip</description>
+    <!-- Optional: Tags to help with tab completion -->
+    <tags></tags>
+</snippet>
