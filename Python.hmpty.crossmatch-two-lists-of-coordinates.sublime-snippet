@@ -1,5 +1,10 @@
 <snippet>
     <content><![CDATA[
+from HMpTy import HTM
+mesh = HTM(
+    depth=12,
+    log=self.log
+)
 matchIndices1, matchIndices2, seps = mesh.match(
     ra1=raList1,
     dec1=decList1,

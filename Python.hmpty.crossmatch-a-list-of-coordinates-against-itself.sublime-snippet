@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+ra = []
+ra[:] = [r["raDeg"] for r in ${1:dbRows}]
+dec = []
+dec[:] = [r["decDeg"] for r in ${1:dbRows}]
+
+from HMpTy.htm import sets
+xmatcher = sets(
+    log=log,
+    ra=ra,
+    dec=dec,
+    radius=${2:10 / (60. * 60.)}, # in degrees
+    sourceList=${1:dbRows}
+)
+allMatches = xmatcher.match 
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xhmpty-crossmatch-a-list-of-coordinates-against-itself</tabTrigger>
+    <!-- Required: Base Phrase to generate tab-triggers -->
+    <triggerBase>crossmatch-a-list-of-coordinates-against-itself</triggerBase>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>snip</description>
+    <!-- Optional: Tags to help with tab completion -->
+    <tags></tags>
+</snippet>

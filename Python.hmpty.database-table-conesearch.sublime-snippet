@@ -11,7 +11,8 @@ cs = conesearch(
     radiusArcsec=${5:10},
     separations=True,
     distinct=True,
-    sqlWhere="${6:spectralType is not null}"
+    sqlWhere="${6:spectralType is not null}",
+    closest=True
 )
 matchIndies, matches = cs.search()
 ]]></content>
